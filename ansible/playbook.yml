@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Wyświetl zawartość pliku konfiguracyjnego
+      shell: cat example_config.txt

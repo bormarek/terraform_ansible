@@ -2,7 +2,7 @@
 [all:vars]
 ansible_connection=ssh
 ansible_ssh_user=marek
-ansible_ssh_pass=marek1983
+ansible_ssh_pass=[password]
 
 [hosts]
 MacBook-Air.lan

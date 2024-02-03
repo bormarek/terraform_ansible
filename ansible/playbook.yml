@@ -1,6 +1,8 @@
 ---
 - hosts: localhost
-  become: true
+  become: false
   tasks:
-    - name: Wyświetl zawartość pliku konfiguracyjnego
-      shell: cat example_config.txt
+    - name: Update homebrew
+      command: "brew update"
+    - name: start jenkin service
+      command: brew services start jenkins
